@@ -4,36 +4,65 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="aboutme.css">
+<link rel="stylesheet" href="projects.css">
 </head>
-<body>
+<body onload="onLoad()">
 
 <ul class="navbarList slidedInTop">
     <li><button class="onNavbar navDefault resume">Résumé</button></li>
     <li><button class="onNavbar navDefault contests" onclick="scrollToContests()">Contests</button></li>
+    <li><button class="onNavbar navDefault experience" onclick="scrollToExperience()">Experience</button></li>
     <li><button class="onNavbar navDefault projects" onclick="scrollToProjects()">Projects</button></li>
     <li><button class="onNavbar navDefault aboutme" onclick="scrollToAboutMe()">About Me</button></li>
     <li class="dropdown"><button class="onNavbar dropdownButton"></button>
         <div class="dropdownContent">
             <button class="onNavbar navDropdown aboutme"  onclick="scrollToAboutMe()">About Me</button>
             <button class="onNavbar navDropdown projects" onclick="scrollToProjects()">Projects</button>
+            <button class="onNavbar navDropdown experience" onclick="scrollToExperience()">Experience</button>
             <button class="onNavbar navDropdown contests" onclick="scrollToContests()">Contests</button>
             <button class="onNavbar navDropdown resume">Résumé</button>
         </div>
     </li>
 </ul>
-<button class="scrollTopButton" id="scrollTopButton" onclick="scrollToTop()"></button>
 <div class="header" id="header">
     <h1 class="fadedIn">Alex Hyde</h1>
 </div>
-<div class="header2" id="aboutme">
-    <h1 >About Me</h1>
-</div>
-<div class="header2" id="projects">
-    <h1 >Projects</h1>
+<section class="aboutmesection" id="aboutme">
+    <div class="aboutmepicture aboutmepictureanimation" id="aboutmepicture">
+        <div class="aboutmepictureinner aboutmepictureinner1">
+            <div class="aboutmepictureinner aboutmepictureinner2">
+                <div class="aboutmepictureinner aboutmepictureinner3">
+                    <div class="aboutmepictureinner aboutmepictureinner4">
+                        <div class="aboutmepictureinner aboutmepictureinner5">
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aboutmetext">
+        i am a software engineering student at the university of waterloo
+    </div>
+</section>
+<section class="projectsection" id="projects">
+    <div class="project project1"></div>
+    <div class="project project2"></div>
+    <div class="project project3"></div>
+    <div class="project project4"></div>
+    <div class="project project5"></div>
+    <div class="project project6"></div>
+</section>
+<div class="header2" id="experience">
+    <h1 >Experience</h1>
 </div>
 <div class="header2" id="contests">
     <h1 >Contests</h1>
 </div>
+<button class="scrollTopButton" id="scrollTopButton" onclick="scrollToTop()"></button>
+
 <footer>
     <p style="color: white;">made by: me</p>
 </footer>

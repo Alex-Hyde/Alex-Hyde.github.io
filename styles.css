@@ -5,7 +5,8 @@ html {
 body {
     font-family: "Baskerville Old Face", serif;
     margin: 0;
-    background-color: #222228;
+    background-color: #020032;
+    overflow-x: hidden;
 }
 .scrollTopButton {
     position: fixed;
@@ -42,12 +43,13 @@ body {
     /* display: block; */
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #222228;
+    background-color: #020032;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
     opacity: 0;;
+    box-shadow: 0px 5px 10px black;
 }
 
 ul {
@@ -60,7 +62,7 @@ li {
 }
 
 .onNavbar {
-    background-color: #222228;
+    background-color: #020032;
     border: none;
     font-size: 17px;
     padding: 15px;
@@ -80,7 +82,7 @@ li {
     background: url("dropdown.png");
 }
 .onNavbar:hover {
-    color: #bbbbbb;
+    color: #da97ff;
 }
 .onNavbar:focus {
     outline: none;
@@ -101,33 +103,11 @@ footer {
 .dropdown:hover .dropdownContent {
     display: block;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 570px) {
     .dropdownButton {
         display: block;
     }
-}
-@media screen and (max-width: 450px) {
     .navDefault {
         display: none;
     }
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes slideInTop {
-    from {top: -50px; opacity: 0;}
-    to {top: 0px; opacity: 1;}
-}
-
-.slidedInTop {
-    animation: slideInTop 1s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-.fadedIn {
-    animation: fadeIn 2s;
 }

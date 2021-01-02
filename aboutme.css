@@ -1,0 +1,85 @@
+.aboutmetext {
+    width: 65%;
+    float: right;
+    color: white;
+}
+.aboutmepicture {
+    width: 34%;
+    float: right;
+    position: relative;
+    border: 2px solid #020032;
+    border-radius: 50%;
+    border-top: 2px solid #7000ad;
+    border-left: 2px solid #7000ad;
+    border-right: 2px solid #7000ad;
+    animation: spinClockwise 20s linear infinite;
+}
+.aboutmepictureanimation {
+    animation: spinClockwise 20s linear infinite;
+}
+.aboutmepictureinner {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    transform: translate(-50%, -50%);
+
+    border: 2px solid #020032;
+    border-radius: 50%;
+}
+.aboutmepictureinner1 {
+    border-top: 1px solid #7000ad;
+    animation: spinClockwiseInner 30s linear infinite;
+}
+.aboutmepictureinner2 {
+    border-bottom: 1px solid #7000ad;
+    border-right: 1px solid #7000ad;
+    animation: spinCounterClockwiseInner 25s linear infinite;
+}
+.aboutmepictureinner3 {
+    border-left: 2px solid #7000ad;
+    animation: spinCounterClockwiseInner 12s linear infinite;
+}
+.aboutmepictureinner4 {
+    border-left: 1px solid #7000ad;
+    border-top: 1px solid #7000ad;
+    border-right: 1px solid #7000ad;
+    animation: spinCounterClockwiseInner 10s linear infinite;
+}
+.aboutmepictureinner5 {
+    border-bottom: 2px solid #7000ad;
+    animation: spinClockwiseInner 12s linear infinite;
+}
+
+
+.aboutmesection {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.aboutme:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+    .aboutmetext {
+        float: none;
+        width: 100%;
+    }
+    .aboutmepicture {
+        width: 100%;
+        max-width: 300px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboutmepictureinner {
+        width: 98%;
+    }
+}

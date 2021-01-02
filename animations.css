@@ -1,0 +1,39 @@
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideInTop {
+    from {top: -50px; opacity: 0;}
+    to {top: 0px; opacity: 1;}
+}
+
+.slidedInTop {
+    animation: slideInTop 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.fadedIn {
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spinClockwise {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes spinCounterClockwise {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+@keyframes spinCounterClockwiseInner {
+    0% {transform: rotate(0deg) translate(-50%, -50%);}
+    100% {transform: rotate(-360deg) translate(-50%, -50%);}
+}
+@keyframes spinClockwiseInner {
+    0% {transform: rotate(0deg) translate(-50%, -50%);}
+    100% {transform: rotate(360deg) translate(-50%, -50%);}
+}

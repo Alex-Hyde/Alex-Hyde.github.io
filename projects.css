@@ -1,0 +1,27 @@
+.project {
+    display: inline-block;
+    margin: 10px;
+    width: 30%;
+    min-width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: #7000ad;
+    opacity: 0;
+}
+.projectsection {
+    max-width: 1200px;
+    padding-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* @media (max-width: 600px) {
+    .project {
+        float: none;
+        width: 50%;
+    }
+} */
+
+
