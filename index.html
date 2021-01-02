@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    
-</style>
+<link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
-    <!-- body -->
+<ul class="navbarList slidedInTop">
+    <li><button class="onNavbar navDefault resume">Résumé</button></li>
+    <li><button class="onNavbar navDefault contests" onclick="scrollToContests()">Contests</button></li>
+    <li><button class="onNavbar navDefault projects" onclick="scrollToProjects()">Projects</button></li>
+    <li><button class="onNavbar navDefault aboutme" onclick="scrollToAboutMe()">About Me</button></li>
+    <li class="dropdown"><button class="onNavbar dropdownButton"></button>
+        <div class="dropdownContent">
+            <button class="onNavbar navDropdown aboutme"  onclick="scrollToAboutMe()">About Me</button>
+            <button class="onNavbar navDropdown projects" onclick="scrollToProjects()">Projects</button>
+            <button class="onNavbar navDropdown contests" onclick="scrollToContests()">Contests</button>
+            <button class="onNavbar navDropdown resume">Résumé</button>
+        </div>
+    </li>
+</ul>
+<button class="scrollTopButton" id="scrollTopButton" onclick="scrollToTop()"></button>
+<div class="header" id="header">
+    <h1 class="fadedIn">Alex Hyde</h1>
+</div>
+<div class="header2" id="aboutme">
+    <h1 >About Me</h1>
+</div>
+<div class="header2" id="projects">
+    <h1 >Projects</h1>
+</div>
+<div class="header2" id="contests">
+    <h1 >Contests</h1>
+</div>
+<footer>
+    <p style="color: white;">made by: me</p>
+</footer>
+
+<script src="main.js"></script>
 
 </body>
 </html>
