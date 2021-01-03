@@ -13,7 +13,7 @@ window.onscroll = function() {
     for (i = 0; i < 6; i++) {
         var rect = elementList[i].getBoundingClientRect();
         if (rect.bottom > 0 && rect.top < window.innerHeight) {
-            elementList[i].classList.add("fadedIn");
+            elementList[i].classList.add("slidedInBottom");
         }
     }
 }
@@ -29,17 +29,19 @@ function onResize() {
     var element = document.getElementById("aboutme");
     element.setAttribute("style","height:"+width+"px");
     element.style.height = width+"px";
-}
 
-// fade in projects if they are already on the screen
-function onLoad() {
+    // fade in projects if resize puts them into view
     var elementList = document.getElementsByClassName("project");
     for (i = 0; i < 6; i++) {
         var rect = elementList[i].getBoundingClientRect();
         if (rect.bottom > 0 && rect.top < window.innerHeight) {
-            elementList[i].classList.add("fadedIn");
+            elementList[i].classList.add("slidedInBottom");
         }
     }
+}
+
+// fade in projects if they are already on the screen
+function onLoad() {
     // set height of picture div to match width (square)
     var element = document.getElementById("aboutmepicture");
     var rect = element.getBoundingClientRect();
@@ -49,6 +51,16 @@ function onLoad() {
     var element = document.getElementById("aboutme");
     element.setAttribute("style","height:"+width+"px");
     element.style.height = width+"px";
+
+    // animate projects when in view
+    var elementList = document.getElementsByClassName("project");
+    for (i = 0; i < 6; i++) {
+        var rect = elementList[i].getBoundingClientRect();
+        if (rect.bottom > 0 && rect.top < window.innerHeight) {
+            elementList[i].classList.add("slidedInBottom");
+        }
+    }
+    
 }
 
 function scrollToProjects() {

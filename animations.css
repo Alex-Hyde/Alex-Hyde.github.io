@@ -4,15 +4,25 @@
 }
 
 @keyframes slideInTop {
-    from {top: -50px; opacity: 0;}
-    to {top: 0px; opacity: 1;}
+    from {transform: translateY(-50px); opacity: 0;}
+    to {transform: translateY(0px); opacity: 1;}
 }
 
 .slidedInTop {
     animation: slideInTop 1s;
-    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
+
+@keyframes slideInBottom {
+    from {transform: translateY(50px); opacity: 0;}
+    to {transform: translateY(0px); opacity: 1;}
+}
+
+.slidedInBottom {
+    animation: slideInBottom 1s;
+    animation-fill-mode: forwards;
+}
+
 
 .fadedIn {
     animation: fadeIn 2s;
@@ -27,7 +37,6 @@
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
-
 
 @keyframes spinCounterClockwiseInner {
     0% {transform: rotate(0deg) translate(-50%, -50%);}

@@ -10,12 +10,12 @@
 </head>
 <body onload="onLoad()">
 
-<ul class="navbarList slidedInTop">
-    <li><button class="onNavbar navDefault resume">Résumé</button></li>
-    <li><button class="onNavbar navDefault contests" onclick="scrollToContests()">Contests</button></li>
-    <li><button class="onNavbar navDefault experience" onclick="scrollToExperience()">Experience</button></li>
-    <li><button class="onNavbar navDefault projects" onclick="scrollToProjects()">Projects</button></li>
-    <li><button class="onNavbar navDefault aboutme" onclick="scrollToAboutMe()">About Me</button></li>
+<ul class="navbarList">
+    <li><button class="onNavbar navDefault resume slidedInTop" style="animation-delay: 1s;">Résumé</button></li>
+    <li><button class="onNavbar navDefault contests slidedInTop" style="animation-delay: 0.8s;" onclick="scrollToContests()">Contests</button></li>
+    <li><button class="onNavbar navDefault experience slidedInTop" style="animation-delay: 0.6s;" onclick="scrollToExperience()">Experience</button></li>
+    <li><button class="onNavbar navDefault projects slidedInTop" style="animation-delay: 0.4s;" onclick="scrollToProjects()">Projects</button></li>
+    <li><button class="onNavbar navDefault aboutme slidedInTop" style="animation-delay: 0.2s;" onclick="scrollToAboutMe()">About Me</button></li>
     <li class="dropdown"><button class="onNavbar dropdownButton"></button>
         <div class="dropdownContent">
             <button class="onNavbar navDropdown aboutme"  onclick="scrollToAboutMe()">About Me</button>
@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="aboutmetext">
-        i am a software engineering student at the university of waterloo
+        I am a software engineering student at the university of waterloo
     </div>
 </section>
 <section class="projectsection" id="projects">
