@@ -1,9 +1,10 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    font-family: "Baskerville Old Face", serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     background-color: #020032;
     overflow-x: hidden;
@@ -22,7 +23,7 @@ body {
     padding: 0;
     margin-top: 50px;
     text-align: center;
-    background-color: #444448;
+    background-color: #020032;
     color: white;
 }
 .header h1 {
@@ -62,8 +63,9 @@ li {
 
 .onNavbar {
     background-color: #020032;
+    font-family: 'Courier New', Courier;
     border: none;
-    font-size: 17px;
+    font-size: 15px;
     padding: 15px;
     color: white;
     text-align: center;

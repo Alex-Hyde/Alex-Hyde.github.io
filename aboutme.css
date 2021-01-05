@@ -1,8 +1,19 @@
 .aboutmetext {
-    width: 65%;
-    float: right;
-    color: white;
+    display: table;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    height: 100%;
+    float: left;
+    color: #acb3cf;
+    /* padding-right: 20px; */
+    align-content: center;
 }
+
+.aboutmetext p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .aboutmepicture {
     width: 34%;
     float: right;
@@ -71,6 +82,7 @@
     .aboutmetext {
         float: none;
         width: 100%;
+        padding-right: 0px;
     }
     .aboutmepicture {
         width: 100%;

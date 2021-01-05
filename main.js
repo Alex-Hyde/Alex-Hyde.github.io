@@ -1,4 +1,31 @@
 scrollTopButton = document.getElementById("scrollTopButton");
+var coolgameSlideIndex = 0;
+coolGameSlideShow();
+var coolgameSlideIndex2 = 0;
+coolGameSlideShow2();
+
+function coolGameSlideShow() {
+    var images = document.getElementsByClassName("coolgameImage");
+    for (i = 0; i < 3; i++) {
+        images[i].style.display = "none";
+    }
+    images[coolgameSlideIndex].style.display = "block";
+    coolgameSlideIndex++;
+    coolgameSlideIndex %= 3;
+    setTimeout(coolGameSlideShow, 5000);
+}
+
+function coolGameSlideShow2() {
+    var images = document.getElementsByClassName("coolgameImage2");
+    for (i = 0; i < 3; i++) {
+        images[i].style.display = "none";
+    }
+    images[coolgameSlideIndex2].style.display = "block";
+    coolgameSlideIndex2++;
+    coolgameSlideIndex2 %= 3;
+    setTimeout(coolGameSlideShow2, 5000);
+}
+
 
 window.onscroll = function() {
     // visibility of scroll to top button
@@ -30,7 +57,7 @@ function onResize() {
     element.setAttribute("style","height:"+width+"px");
     element.style.height = width+"px";
 
-    // fade in projects if resize puts them into view
+    // fade in projects if resize puts them into view and adjust height
     var elementList = document.getElementsByClassName("project");
     for (i = 0; i < 6; i++) {
         var rect = elementList[i].getBoundingClientRect();
@@ -52,7 +79,7 @@ function onLoad() {
     element.setAttribute("style","height:"+width+"px");
     element.style.height = width+"px";
 
-    // animate projects when in view
+    // animate projects when in view and adjust height
     var elementList = document.getElementsByClassName("project");
     for (i = 0; i < 6; i++) {
         var rect = elementList[i].getBoundingClientRect();
@@ -60,7 +87,6 @@ function onLoad() {
             elementList[i].classList.add("slidedInBottom");
         }
     }
-    
 }
 
 function scrollToProjects() {
