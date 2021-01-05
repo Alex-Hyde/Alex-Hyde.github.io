@@ -4,7 +4,7 @@
     min-height: 10px;
     height: 100%;
     margin: 10px;
-    min-width: 250px;
+    min-width: 280px;
     border-style: solid;
     border-width: 3px;
     border-radius: 5px;
@@ -14,7 +14,6 @@
     background-color: #002446;
     transition: 0.3s;
 }
-
 .project:hover {
     margin-top: 3px;
     margin-bottom: 17px;
@@ -24,7 +23,6 @@
     display: inline-flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-top: 150px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -35,6 +33,12 @@
         width: 50%;
     }
 } */
+
+.projectSection {
+    margin: auto;
+    max-width: 1200px;
+    padding-top: 150px;
+}
 
 .projectFooter {
     height: 50px;
@@ -50,6 +54,15 @@
     padding-left: 20px;
     background-color: #002446;
 }
+@media (max-width: 320px) {
+    .project {
+        min-width: 200px;
+    }
+    .projectTitle {
+        height: 100px;
+    }
+}
+
 
 .projectDescription {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -63,19 +76,163 @@
 }
 
 .githubIcon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     right: 5px;
 }
 .githubIconImageHover {
     display: none;
 }
-
+.githubIcon:hover {
+    cursor: pointer;
+}
 .githubIcon:hover > .githubIconImage {
     display: none;
 }
 .githubIcon:hover > .githubIconImageHover {
     display: block;
+}
+
+.projectImage {
+    width: 100%;
+    display: none;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.project3:hover > .recursionImage{
+    opacity: 1;
+}
+.project4:hover > .raycastingImage{
+    opacity: 1;
+}
+.project5:hover > .dicegameImage{
+    opacity: 1;
+}
+.project6:hover > .wordsearchImage{
+    opacity: 1;
+}
+.firstLanguage {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    top: 5px;
+}
+.secondLanguage {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    top: 45px;
+}
+
+.mainProject {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+@media (max-width: 900px) {
+    .mainProject {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.mainProjectTitle {
+    color: white;
+    font-size: 23px;
+    margin: 0px 10px;
+    padding-top: 20px;
+}
+.mainProjectDescription {
+    color: #acb3cf;
+    width: 50%;
+    padding: 20px;
+    margin: 0px;
+    background-color: #002446;
+}
+.mainProjectLanguageIcon {
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    padding-right: 0px;
+    display: inline-block;
+}
+.mainProjectFrontImage {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    top: 0px;
+    right: 0px;
+    border: 2px solid #7000ad;
+    border-radius: 5px;
+    z-index: -10;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.mainProjectFrontImage:hover {
+    opacity: 1;
+}
+.mainProjectBackImage {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    bottom: 0px;
+    right: 10%;
+    opacity: 0.5;
+    z-index: -20;
+}
+.mainProjectLowerIcon1 {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+.mplHover {
+    display: none;
+}
+@media (max-width: 800px) {
+    .mainProjectDescription {
+        width: 60%;
+    }
+}
+@media (max-width: 700px) {
+    .mainProjectDescription {
+        width: 80%;
+        background-color: transparent;
+    }
+    .mainProjectBackImage {
+        display: none;
+    }
+    .mainProjectFrontImage {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        top: 0px;
+        left: 0px;
+        opacity: 0.3;
+    }
+}
+@media (max-width: 600px) {
+    .mainProjectTitle {
+        padding-top: 10px;
+    }
+    .projectSection {
+        margin-top: 150px;
+    }
+}
+
+.mainProjectLowerGithubButton:hover > .mainProjectLowerIcon1 {
+    display: none;
+}
+.mainProjectLowerGithubButton:hover > .mplHover {
+    display: inline-block;
+}
+.mainProjectLowerGithubButton:hover {
+    cursor: pointer;
 }

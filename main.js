@@ -3,6 +3,57 @@ var coolgameSlideIndex = 0;
 coolGameSlideShow();
 var coolgameSlideIndex2 = 0;
 coolGameSlideShow2();
+var recursuinSlideIndex = 0;
+recursionSlideShow();
+var raycastingSlideIndex = 0;
+raycastingSlideShow();
+var dicegameSlideIndex = 0;
+dicegameSlideShow();
+var wordsearchSlideIndex = 0;
+wordsearchSlideShow();
+
+
+var a1 = 0;
+var a2 = Math.PI/4;
+var a3 = Math.PI*3/4;
+var a4 = Math.PI;
+var a5 = Math.PI*7/11;
+var canvas = document.getElementById("aboutmeCanvas");
+var ctx = canvas.getContext("2d");
+ctx.strokeStyle = "purple";
+setInterval(drawAboutMeCircles, 15);
+
+
+function drawAboutMeCircles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(document.getElementById("profilePicture"), 100, 100, canvas.width-200, canvas.height-200);
+    ctx.beginPath();
+    ctx.lineWidth = 6;
+    ctx.arc(canvas.width/2, canvas.height/2, canvas.height/2, a1, a1+Math.PI/2);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.lineWidth = 4;
+    ctx.arc(canvas.width/2, canvas.height/2, canvas.height/2-15, a2, a2+Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.lineWidth = 6;
+    ctx.arc(canvas.width/2, canvas.height/2, canvas.height/2-30, a3, a3+Math.PI*2/3);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.lineWidth = 8;
+    ctx.arc(canvas.width/2, canvas.height/2, canvas.height/2-45, a4, a4+Math.PI*3/2);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.lineWidth = 6;
+    ctx.arc(canvas.width/2, canvas.height/2, canvas.height/2-60, a5, a5+Math.PI/2);
+    ctx.stroke();
+    a1 += 0.005;
+    a2 += 0.0075;
+    a3 -= 0.006;
+    a4 -= 0.003;
+    a5 += 0.0045;
+}
+
 
 function coolGameSlideShow() {
     var images = document.getElementsByClassName("coolgameImage");
@@ -24,6 +75,60 @@ function coolGameSlideShow2() {
     coolgameSlideIndex2++;
     coolgameSlideIndex2 %= 3;
     setTimeout(coolGameSlideShow2, 5000);
+}
+
+function recursionSlideShow() {
+    var images = document.getElementsByClassName("recursionImage");
+    if (window.getComputedStyle(images[0]).getPropertyValue("opacity") > 0.6) {
+        recursuinSlideIndex++;
+        recursuinSlideIndex %= 6;
+        for (i = 0; i < 6; i++) {
+            images[i].style.display = "none";
+        }
+        images[recursuinSlideIndex].style.display = "block";
+    }
+    setTimeout(recursionSlideShow, 3000);
+}
+
+function raycastingSlideShow() {
+    var images = document.getElementsByClassName("raycastingImage");
+    if (window.getComputedStyle(images[0]).getPropertyValue("opacity") > 0.6) {
+        raycastingSlideIndex++;
+        raycastingSlideIndex %= 3;
+        for (i = 0; i < 3; i++) {
+            images[i].style.display = "none";
+        }
+        images[raycastingSlideIndex].style.display = "block";
+    }
+    setTimeout(raycastingSlideShow, 3000);
+}
+
+
+function dicegameSlideShow() {
+    var images = document.getElementsByClassName("dicegameImage");
+    if (window.getComputedStyle(images[0]).getPropertyValue("opacity") > 0.6) {
+        dicegameSlideIndex++;
+        dicegameSlideIndex %= 3;
+        for (i = 0; i < 3; i++) {
+            images[i].style.display = "none";
+        }
+        images[dicegameSlideIndex].style.display = "block";
+    }
+    setTimeout(dicegameSlideShow, 3000);
+}
+
+
+function wordsearchSlideShow() {
+    var images = document.getElementsByClassName("wordsearchImage");
+    if (window.getComputedStyle(images[0]).getPropertyValue("opacity") > 0.6) {
+        wordsearchSlideIndex++;
+        wordsearchSlideIndex %= 4;
+        for (i = 0; i < 4; i++) {
+            images[i].style.display = "none";
+        }
+        images[wordsearchSlideIndex].style.display = "block";
+    }
+    setTimeout(wordsearchSlideShow, 3000);
 }
 
 
@@ -49,7 +154,7 @@ window.addEventListener("resize", onResize);
 
 function onResize() {
     // set height of picture div to match width (square)
-    var element = document.getElementById("aboutmepicture");
+    var element = document.getElementById("aboutmeCanvas");
     var width = element.clientWidth;
     element.setAttribute("style","height:"+width+"px");
     element.style.height = width+"px";
@@ -70,7 +175,7 @@ function onResize() {
 // fade in projects if they are already on the screen
 function onLoad() {
     // set height of picture div to match width (square)
-    var element = document.getElementById("aboutmepicture");
+    var element = document.getElementById("aboutmeCanvas");
     var rect = element.getBoundingClientRect();
     var width = rect.width;
     element.setAttribute("style","height:"+width+"px");

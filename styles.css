@@ -21,14 +21,15 @@ body {
 }
 .header {
     padding: 0;
-    margin-top: 50px;
+    margin-top: 250px;
+    margin-bottom: 200px;
     text-align: center;
     background-color: #020032;
     color: white;
 }
 .header h1 {
     font-size: 50px;
-    padding: 70px;
+    padding: 20px;
     margin: 0px;
 }
 .header2 {
