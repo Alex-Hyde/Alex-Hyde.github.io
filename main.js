@@ -5,6 +5,8 @@ var plannerSlideIndex = 0;
 plannerSlideShow();
 var battleshipSlideIndex = 0;
 battleshipSlideShow();
+walkablockSlideIndex = 0;
+walkablockSlideShow();
 var auroraSlideIndex = 0;
 auroraSlideShow();
 var recursuinSlideIndex = 0;
@@ -90,6 +92,20 @@ function battleshipSlideShow() {
     battleshipSlideIndex %= 3;
     setTimeout(battleshipSlideShow, 8000);
 }
+
+function walkablockSlideShow() {
+    var images = document.getElementsByClassName("walkablockImage");
+    if (window.getComputedStyle(images[0]).getPropertyValue("opacity") > 0.6) {
+        walkablockSlideIndex++;
+        walkablockSlideIndex %= 3;
+        for (i = 0; i < 3; i++) {
+            images[i].style.display = "none";
+        }
+        images[walkablockSlideIndex].style.display = "block";
+    }
+    setTimeout(walkablockSlideShow, 3000);
+}
+
 
 function auroraSlideShow() {
     var images = document.getElementsByClassName("auroraImage");

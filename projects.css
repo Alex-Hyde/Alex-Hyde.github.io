@@ -101,6 +101,9 @@
     opacity: 0.5;
     transition: 0.3s;
 }
+.project1:hover > .walkablockImage{
+    opacity: 1;
+}
 .project2:hover > .auroraImage{
     opacity: 1;
 }
@@ -223,12 +226,22 @@
         opacity: 0.3;
     }
 }
+.projectLineBreak {
+    width: 50%;
+    margin-right: 50%;
+    margin-left: 10px;
+}
 @media (max-width: 600px) {
     .mainProjectTitle {
         padding-top: 10px;
     }
     .projectSection {
         margin-top: 150px;
+    }
+    .projectLineBreak {
+        width: auto;
+        padding-right: 0px;
+        margin-right: 10px;
     }
 }
 
