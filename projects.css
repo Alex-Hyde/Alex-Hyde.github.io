@@ -101,7 +101,9 @@
     opacity: 0.5;
     transition: 0.3s;
 }
-
+.project2:hover > .auroraImage{
+    opacity: 1;
+}
 .project3:hover > .recursionImage{
     opacity: 1;
 }
@@ -155,6 +157,9 @@
     margin: 0px;
     background-color: #002446;
 }
+.mainProjectDescription2 {
+    width: 60%;
+}
 .mainProjectLanguageIcon {
     width: 30px;
     height: 30px;
@@ -163,6 +168,7 @@
     display: inline-block;
 }
 .mainProjectFrontImage {
+    opacity: 0;
     position: absolute;
     height: 80%;
     width: auto;
@@ -171,11 +177,7 @@
     border: 2px solid #7000ad;
     border-radius: 5px;
     z-index: -10;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-.mainProjectFrontImage:hover {
-    opacity: 1;
+    transition: 1.5s;
 }
 .mainProjectBackImage {
     position: absolute;
@@ -199,6 +201,9 @@
 @media (max-width: 800px) {
     .mainProjectDescription {
         width: 60%;
+    }
+    .mainProjectDescription2 {
+        width: 80%;
     }
 }
 @media (max-width: 700px) {

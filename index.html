@@ -22,7 +22,7 @@
             <button class="onNavbar navDropdown projects" onclick="scrollToProjects()">Projects</button>
             <!-- <button class="onNavbar navDropdown experience" onclick="scrollToExperience()">Experience</button> -->
             <!-- <button class="onNavbar navDropdown contests" onclick="scrollToContests()">Contests</button> -->
-            <button class="onNavbar navDropdown resume">Résumé</button>
+            <button onclick="window.open('resume.pdf', '_blank')" type="button" class="onNavbar navDropdown resume">Résumé</button>
         </div>
     </li>
 </ul>
@@ -46,8 +46,10 @@
 </section>
 <section class="projectSection">
     <div class="mainProject">
-        <img src="ProjectImages/RecursionGraphics/1.PNG" class="mainProjectBackImage">
-        <img src="ProjectImages/RecursionGraphics/2.PNG" class="mainProjectFrontImage">
+        <img src="ProjectImages/Coolgame/1.PNG" class="mainProjectBackImage">
+        <img src="ProjectImages/Coolgame/1.PNG" class="mainProjectFrontImage coolgameImage">
+        <img src="ProjectImages/Coolgame/2.PNG" class="mainProjectFrontImage coolgameImage">
+        <img src="ProjectImages/Coolgame/3.PNG" class="mainProjectFrontImage coolgameImage">
         <p class="mainProjectTitle"><b>Coolgame</b></p>
         <img src="jsIcon.png" class="mainProjectLanguageIcon">
         <img src="htmlIcon.png" class="mainProjectLanguageIcon">
@@ -64,31 +66,40 @@
     </div>
     
     <div class="mainProject">
-        <img src="ProjectImages/RecursionGraphics/1.PNG" class="mainProjectBackImage">
-        <img src="ProjectImages/RecursionGraphics/2.PNG" class="mainProjectFrontImage">
+        <img src="ProjectImages/Planner/1.PNG" class="mainProjectBackImage">
+        <img src="ProjectImages/Planner/1.PNG" class="mainProjectFrontImage plannerImage" style="opacity: 1;">
+        <img src="ProjectImages/Planner/2.png" class="mainProjectFrontImage plannerImage">
+        <img src="ProjectImages/Planner/3.png" class="mainProjectFrontImage plannerImage">
+        <img src="ProjectImages/Planner/4.png" class="mainProjectFrontImage plannerImage">
+        <img src="ProjectImages/Planner/5.png" class="mainProjectFrontImage plannerImage">
+        <img src="ProjectImages/Planner/6.png" class="mainProjectFrontImage plannerImage">
         <p class="mainProjectTitle"><b>Planner</b></p>
         <img src="pythonIcon.png" class="mainProjectLanguageIcon">
-        <p class="mainProjectDescription">
+        <p class="mainProjectDescription mainProjectDescription2">
             Allows you to easily keep track of tasks and assignments, 
             with implemented study sessions to use when working on said tasks. 
             Also implements a calendar to keep track of due dates and upcoming 
-            tasks/events.
+            tasks/events. Built with a custom module that allows for easy placement of
+            elements such as buttons and content sections with full responsiveness
+            to screen size changes.
         </p>
-        <a class="mainProjectLowerGithubButton">
+        <a class="mainProjectLowerGithubButton1">
             <img src="githubIcon.png" class="mainProjectLowerIcon1">
             <img src="githubIconHover.png" class="mainProjectLowerIcon1 mplHover">
         </a>
     </div>
 
     <div class="mainProject">
-        <img src="ProjectImages/RecursionGraphics/1.PNG" class="mainProjectBackImage">
-        <img src="ProjectImages/RecursionGraphics/2.PNG" class="mainProjectFrontImage">
+        <img src="ProjectImages/Battleship/1.png" class="mainProjectBackImage">
+        <img src="ProjectImages/Battleship/1.png" class="mainProjectFrontImage battleshipImage" style="opacity: 0;">
+        <img src="ProjectImages/Battleship/2.png" class="mainProjectFrontImage battleshipImage">
+        <img src="ProjectImages/Battleship/3.png" class="mainProjectFrontImage battleshipImage">
         <p class="mainProjectTitle"><b>Battleship</b></p>
         <img src="cIcon.png" class="mainProjectLanguageIcon">
         <p class="mainProjectDescription">
             Implementation of the classic game Battleship using an Arduino. 
             The game is displayed on a 32x16 LED display and includes 
-            PvP and PvE multiplayer with multiple AI difficulties. 
+            PvP multiplayer and PvE with multiple AI difficulties. 
             Developed in a 5 person team.
         </p>
         <a class="mainProjectLowerGithubButton">
@@ -99,9 +110,9 @@
     <h5 style="color: #acb3cf;">Hover over a project to see more images</h5>
     <div class="projectContainer" id="projects">
         <div class="project project1">
-            <img class="coolgameImage" src="coolgame1.PNG" style="width:100%;display: block;">
-            <img class="coolgameImage" src="coolgame2.PNG" style="width:100%;display: none;">
-            <img class="coolgameImage" src="coolgame3.PNG" style="width:100%;display: none;">
+            <img class="projectImage" src="coolgame1.PNG" style="width:100%;display: block;">
+            <img class="projectImage" src="coolgame2.PNG" style="width:100%;display: none;">
+            <img class="projectImage" src="coolgame3.PNG" style="width:100%;display: none;">
             <div class="projectTitle">
                 <b>Coolgame</b>
                 
@@ -115,20 +126,24 @@
             </a>
         </div>
         <div class="project project2">
-            <img class="coolgameImage2" src="coolgame1.PNG" style="width:100%;display: block;">
-            <img class="coolgameImage2" src="coolgame2.PNG" style="width:100%;display: none;">
-            <img class="coolgameImage2" src="coolgame3.PNG" style="width:100%;display: none;">
+            <img class="auroraImage projectImage" src="ProjectImages/AuroraParks/1.png" style="display: block;">
+            <img class="auroraImage projectImage" src="ProjectImages/AuroraParks/2.png">
+            <img class="auroraImage projectImage" src="ProjectImages/AuroraParks/3.png">
+            <img class="auroraImage projectImage" src="ProjectImages/AuroraParks/4.png">
+            <img class="auroraImage projectImage" src="ProjectImages/AuroraParks/5.png">
             <div class="projectTitle">
-                <b>Coolgame</b>
+                <b>Aurora Parks</b>
                 
                 <div class="projectDescription">
-                    A two dimensional level based game hosted entirely on the web.
+                    Android app that connects people to local parks, trails, and events.
                 </div>
             </div>
-            <a class="githubIcon">
+            <a class="githubIcon" href="#" target="_blank">
                 <img src="githubIcon.png" class="githubIconImage" style="width: 100%;height: 100%;">
                 <img src="githubIconHover.png" class="githubIconImageHover" style="width: 100%;height: 100%;">
             </a>
+            <img src="javaIcon.png" class="firstLanguage">
+            <img src="xmlIcon.png" class="secondLanguage">
         </div>
         <div class="project project3">
             <img class="recursionImage projectImage" src="ProjectImages/RecursionGraphics/1.PNG" style="display: block;">
@@ -158,7 +173,7 @@
                 <b>Raycasting</b>
                 
                 <div class="projectDescription">
-                    3-dimensional rendering of a 2-dimensional tilemap using raycasting.
+                    3-dimensional rendering of a 2-dimensional tilemap.
                 </div>
             </div>
             <a class="githubIcon" href="https://github.com/Alex-Hyde/raycasting-with-fisheye-correction" target="_blank">

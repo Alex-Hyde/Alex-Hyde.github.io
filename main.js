@@ -1,8 +1,12 @@
 scrollTopButton = document.getElementById("scrollTopButton");
 var coolgameSlideIndex = 0;
 coolGameSlideShow();
-var coolgameSlideIndex2 = 0;
-coolGameSlideShow2();
+var plannerSlideIndex = 0;
+plannerSlideShow();
+var battleshipSlideIndex = 0;
+battleshipSlideShow();
+var auroraSlideIndex = 0;
+auroraSlideShow();
 var recursuinSlideIndex = 0;
 recursionSlideShow();
 var raycastingSlideIndex = 0;
@@ -54,28 +58,52 @@ function drawAboutMeCircles() {
     a5 += 0.0045;
 }
 
-
 function coolGameSlideShow() {
     var images = document.getElementsByClassName("coolgameImage");
     for (i = 0; i < 3; i++) {
-        images[i].style.display = "none";
+        images[i].style.opacity = "0";
     }
-    images[coolgameSlideIndex].style.display = "block";
+    images[coolgameSlideIndex].style.opacity = window.innerWidth > 700 ? 1 : 0.3;
     coolgameSlideIndex++;
     coolgameSlideIndex %= 3;
-    setTimeout(coolGameSlideShow, 5000);
+    setTimeout(coolGameSlideShow, 8000);
 }
 
-function coolGameSlideShow2() {
-    var images = document.getElementsByClassName("coolgameImage2");
-    for (i = 0; i < 3; i++) {
-        images[i].style.display = "none";
+function plannerSlideShow() {
+    var images = document.getElementsByClassName("plannerImage");
+    for (i = 0; i < 6; i++) {
+        images[i].style.opacity = "0";
     }
-    images[coolgameSlideIndex2].style.display = "block";
-    coolgameSlideIndex2++;
-    coolgameSlideIndex2 %= 3;
-    setTimeout(coolGameSlideShow2, 5000);
+    images[plannerSlideIndex].style.opacity = window.innerWidth > 700 ? 1 : 0.3;
+    plannerSlideIndex++;
+    plannerSlideIndex %= 6;
+    setTimeout(plannerSlideShow, 8000);
 }
+
+function battleshipSlideShow() {
+    var images = document.getElementsByClassName("battleshipImage");
+    for (i = 0; i < 3; i++) {
+        images[i].style.opacity = "0";
+    }
+    images[battleshipSlideIndex].style.opacity = window.innerWidth > 700 ? 1 : 0.3;
+    battleshipSlideIndex++;
+    battleshipSlideIndex %= 3;
+    setTimeout(battleshipSlideShow, 8000);
+}
+
+function auroraSlideShow() {
+    var images = document.getElementsByClassName("auroraImage");
+    if (window.getComputedStyle(images[0]).getPropertyValue("opacity") > 0.6) {
+        auroraSlideIndex++;
+        auroraSlideIndex %= 5;
+        for (i = 0; i < 5; i++) {
+            images[i].style.display = "none";
+        }
+        images[auroraSlideIndex].style.display = "block";
+    }
+    setTimeout(auroraSlideShow, 3000);
+}
+
 
 function recursionSlideShow() {
     var images = document.getElementsByClassName("recursionImage");
@@ -170,6 +198,23 @@ function onResize() {
             elementList[i].classList.add("slidedInBottom");
         }
     }
+    var images = document.getElementsByClassName("coolgameImage");
+    for (i = 0; i < 3; i++) {
+        images[i].style.opacity = "0";
+    }
+    images[coolgameSlideIndex].style.opacity = window.innerWidth > 700 ? 1 : 0.3;
+
+    var images = document.getElementsByClassName("plannerImage");
+    for (i = 0; i < 6; i++) {
+        images[i].style.opacity = "0";
+    }
+    images[plannerSlideIndex].style.opacity = window.innerWidth > 700 ? 1 : 0.3;
+
+    var images = document.getElementsByClassName("battleshipImage");
+    for (i = 0; i < 3; i++) {
+        images[i].style.opacity = "0";
+    }
+    images[battleshipSlideIndex].style.opacity = window.innerWidth > 700 ? 1 : 0.3;
 }
 
 // fade in projects if they are already on the screen
