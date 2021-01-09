@@ -62,12 +62,12 @@ function drawAboutMeCircles() {
 
 function coolGameSlideShow() {
     var images = document.getElementsByClassName("coolgameImage");
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 6; i++) {
         images[i].style.opacity = "0";
     }
     images[coolgameSlideIndex].style.opacity = window.innerWidth > 700 ? 1 : 0.3;
     coolgameSlideIndex++;
-    coolgameSlideIndex %= 3;
+    coolgameSlideIndex %= 6;
     setTimeout(coolGameSlideShow, 8000);
 }
 
