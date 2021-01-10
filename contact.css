@@ -1,0 +1,19 @@
+@media (max-width: 1290px) {
+    #contactInfo {
+        display: none;
+    }
+}
+
+#verticalLine {
+    position: fixed;
+    bottom: 0px;
+    left: 25px;
+    border-left: white solid 2px;
+    height: 300px;
+}
+
+#contactGithub {
+    position: fixed;
+    bottom: 260px;
+    left: 30px;
+}

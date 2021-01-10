@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="animations.css">
 <link rel="stylesheet" href="aboutme.css">
 <link rel="stylesheet" href="projects.css">
+<link rel="stylesheet" href="contact.css">
 </head>
 <body onload="onLoad()">
 
@@ -29,25 +30,35 @@
 <!-- <div class="header" id="header">
     <h1 class="fadedIn">Alex Hyde</h1>
 </div> -->
+
 <section class="aboutmesection" id="aboutme">
     <canvas class="aboutmeCanvas" id="aboutmeCanvas" width="1000" height="1000"></canvas>
 
     <div class="aboutmetext" id="aboutmetext">
         <p>
-            Hi, My name's Alex!<br>
+            Hi, my name's Alex!<br>
             <br>
-            I am a first year Software Engineering student at the University of Waterloo. <br>
+            I am currently a first year Software Engineering student studying at the University of Waterloo. <br>
             <br>
+            I've made a variety of different programs over the years, which you can see in the 
+            <a href="#projects" style="text-decoration: none;color: #acb3cf;">projects</a> section.
             Perhaps you want to check out this 
             <a href="https://alex-hyde.github.io/galacticolour/" target="_blank" style="color: #acb3cf;">cool game</a> 
-            that I made!
+            that I made!<br>
+            <br>
+            My skills include:<br>
+            <em style="color: gray;font-size: 14px;">JavaScript, &nbsp Python, &nbsp C, &nbsp Java, &nbsp HTMl, &nbsp CSS, &nbsp XML</em>
         </p>
     </div>
 </section>
 <section class="projectSection" id="projects">
-    <h1 style="color: white;padding-left: 15%;padding-right: 15%;padding-bottom: 50px; max-width: 1200px;">
+    <!-- <h1 style="color: white;padding-left: 15%;padding-right: 15%;padding-bottom: 50px; max-width: 1200px;">
+        Here are some of the things I've made:
+    </h1> -->
+    <h1 style="color: white;margin-left: 10px;margin-right: 10px;">
         Here are some of the things I've made:
     </h1>
+    <hr color="#acb3cf" class="projectLineBreak" style="margin-bottom: 20px;">
     <div class="mainProject" id="galacticolour">
         <img src="ProjectImages/Coolgame/1.PNG" class="mainProjectBackImage">
         <img src="ProjectImages/Coolgame/4.PNG" class="mainProjectFrontImage coolgameImage">
@@ -238,8 +249,16 @@
 </div> -->
 <button class="scrollTopButton" id="scrollTopButton" onclick="scrollToTop()"></button>
 
+<!-- <div id="contactInfo">
+    <div id="verticalLine"></div>
+    <a class="githubIcon"  id="contactGithub" href="https://github.com/Alex-Hyde" target="_blank">
+        <img src="Icons/githubIcon.png" class="githubIconImage" style="width: 100%;height: 100%;">
+        <img src="Icons/githubIconHover.png" class="githubIconImageHover" style="width: 100%;height: 100%;">
+    </a>
+</div> -->
+
 <footer>
-    <p style="color: white;">made by: me</p>
+    <p style="color: white;font-size: 12px;padding: 20px;">Designed and Built by Alex Hyde</p>
 </footer>
 
 <script src="main.js"></script>
