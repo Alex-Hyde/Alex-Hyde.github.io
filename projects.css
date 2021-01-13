@@ -39,6 +39,16 @@
     max-width: 1200px;
     padding-top: 150px;
 }
+@media (max-width: 750px) {
+    .projectSection {
+        padding-top: 240px;
+    }
+}
+@media (max-width: 350px) {
+    .projectSection {
+        padding-top: 270px;
+    }
+}
 
 .projectFooter {
     height: 50px;
