@@ -1,4 +1,4 @@
-@media (max-width: 1290px) {
+@media (max-width: 1330px) {
     #contactInfo {
         display: none;
     }
@@ -12,8 +12,36 @@
     height: 300px;
 }
 
+.contactImageHover {
+    display: none;
+}
+
 #contactGithub {
     position: fixed;
     bottom: 260px;
     left: 30px;
+    width: 40px;
+    height: 40px;
+}
+#contactLinkedin {
+    position: fixed;
+    bottom: 210px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+}
+#contactEmail {
+    position: fixed;
+    bottom: 155px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.contactButton:hover > .contactImage {
+    display: none;
+}
+
+.contactButton:hover > .contactImageHover {
+    display: block;
 }

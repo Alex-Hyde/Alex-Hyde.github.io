@@ -206,9 +206,20 @@
     height: 40px;
     padding: 15px;
     padding-bottom: 30px;
+    padding-right: 0px;
+    display: inline-block;
+}
+.mainProjectLowerIcon2 {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    padding-bottom: 30px;
     display: inline-block;
 }
 .mplHover {
+    display: none;
+}
+.mplHover2 {
     display: none;
 }
 @media (max-width: 800px) {
@@ -262,5 +273,14 @@
     display: inline-block;
 }
 .mainProjectLowerGithubButton:hover {
+    cursor: pointer;
+}
+.mainProjectLowerSiteButton:hover > .mainProjectLowerIcon2 {
+    display: none;
+}
+.mainProjectLowerSiteButton:hover > .mplHover2 {
+    display: inline-block;
+}
+.mainProjectLowerSiteButton:hover {
     cursor: pointer;
 }
