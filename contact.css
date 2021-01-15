@@ -1,3 +1,51 @@
+.contactSection {
+    padding-top: 100px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+#contactButtonContainer {
+    text-align: center;
+    background-color: #002446;
+    border-radius: 15px;
+    /* box-shadow: 5px 5px 10px black; */
+}
+
+#contactGithub {
+    display: inline-block;
+    padding: 0px 5px;
+    width: 70px;
+    height: 70px;
+}
+#contactLinkedin {
+    display: inline-block;
+    padding: 0px 5px;
+    width: 70px;
+    height: 70px;
+}
+#contactEmail {
+    display: inline-block;
+    padding: 0px 5px;
+    width: 70px;
+    height: 70px;
+}
+
+.contactButton:hover > .contactImage {
+    display: none;
+}
+
+.contactButton:hover > .contactImageHover {
+    display: block;
+}
+
+.contactImageHover {
+    display: none;
+}
+
+
+/* everything after this line is for the contact side bar */
+
+
 @media (max-width: 1330px) {
     #contactInfo {
         display: none;
@@ -11,37 +59,24 @@
     border-left: white solid 2px;
     height: 300px;
 }
-
-.contactImageHover {
-    display: none;
-}
-
-#contactGithub {
+#contactGithub2 {
     position: fixed;
     bottom: 260px;
     left: 30px;
     width: 40px;
     height: 40px;
 }
-#contactLinkedin {
+#contactLinkedin2 {
     position: fixed;
     bottom: 210px;
     left: 30px;
     width: 40px;
     height: 40px;
 }
-#contactEmail {
+#contactEmail2 {
     position: fixed;
     bottom: 155px;
     left: 30px;
     width: 40px;
     height: 40px;
-}
-
-.contactButton:hover > .contactImage {
-    display: none;
-}
-
-.contactButton:hover > .contactImageHover {
-    display: block;
 }

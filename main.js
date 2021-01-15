@@ -289,6 +289,10 @@ function scrollToExperience() {
     var experience = document.getElementById("experience");
     experience.scrollIntoView({behaviour: 'smooth'});
 }
+function scrollToContact() {
+    var contact = document.getElementById("contact");
+    contact.scrollIntoView({behaviour: 'smooth'});
+}
 function scrollToTop() {
     window.scrollTo({top: 0, behaviour: "smooth"});
 }

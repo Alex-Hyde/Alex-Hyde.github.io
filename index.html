@@ -13,15 +13,17 @@
 <body onload="onLoad()">
 
 <ul class="navbarList">
-    <li><button onclick="window.open('resume.pdf', '_blank')" type="button" class="onNavbar navDefault resume slidedInTop" style="animation-delay: 0.6s;">Résumé</button></li>
+    <li><button onclick="window.open('resume.pdf', '_blank')" type="button" class="onNavbar navDefault resume slidedInTop" style="animation-delay: 0.8s;">Résumé</button></li>
     <!-- <li><button class="onNavbar navDefault contests slidedInTop" style="animation-delay: 0.8s;" onclick="scrollToContests()">Contests</button></li> -->
     <!-- <li><button class="onNavbar navDefault experience slidedInTop" style="animation-delay: 0.6s;" onclick="scrollToExperience()">Experience</button></li> -->
+    <li><button class="onNavbar navDefault contact slidedInTop" style="animation-delay: 0.6s;" onclick="scrollToContact()">Contact</button></li>
     <li><button class="onNavbar navDefault projects slidedInTop" style="animation-delay: 0.4s;" onclick="scrollToProjects()">Projects</button></li>
     <li><button class="onNavbar navDefault aboutme slidedInTop" style="animation-delay: 0.2s;" onclick="scrollToAboutMe()">About Me</button></li>
     <li class="dropdown"><button class="onNavbar dropdownButton"></button>
         <div class="dropdownContent">
             <button class="onNavbar navDropdown aboutme"  onclick="scrollToAboutMe()">About Me</button>
             <button class="onNavbar navDropdown projects" onclick="scrollToProjects()">Projects</button>
+            <button class="onNavbar navDropdown contact" onclick="scrollToContact()">Contact</button>
             <!-- <button class="onNavbar navDropdown experience" onclick="scrollToExperience()">Experience</button> -->
             <!-- <button class="onNavbar navDropdown contests" onclick="scrollToContests()">Contests</button> -->
             <button onclick="window.open('resume.pdf', '_blank')" type="button" class="onNavbar navDropdown resume">Résumé</button>
@@ -250,6 +252,27 @@
     </div>
 </section>
 
+<section class="contactSection" id="contact">
+    <h1 style="color: white;margin-left: 10px;margin-right: 10px;">
+        Want to get in touch?
+    </h1>
+    <hr color="#acb3cf" style="margin-bottom: 20px;">
+    <div id="contactButtonContainer">
+        <a class="contactButton" id="contactGithub" href="https://github.com/Alex-Hyde" target="_blank">
+            <img src="Icons/ContactIcons/github.png" class="contactImage" style="width: 100%;height: 100%;">
+            <img src="Icons/ContactIcons/githubHover.png" class="contactImageHover" style="width: 100%;height: 100%;">
+        </a>
+        <a class="contactButton" id="contactLinkedin" href="https://www.linkedin.com/in/alx-hyde/" target="_blank">
+            <img src="Icons/ContactIcons/linkedin2.png" class="contactImage" style="width: 100%;height: 100%;">
+            <img src="Icons/ContactIcons/linkedin2Hover.png" class="contactImageHover" style="width: 100%;height: 100%;">
+        </a>
+        <a class="contactButton" id="contactEmail" href="mailto:alx.hyde@outlook.com">
+            <img src="Icons/ContactIcons/email.png" class="contactImage" style="width: 100%;height: 100%;">
+            <img src="Icons/ContactIcons/emailHover.png" class="contactImageHover" style="width: 100%;height: 100%;">
+        </a>
+    </div>
+</section>
+
 <!-- <div class="header2" id="experience">
     <h1 >Experience</h1>
 </div> -->
@@ -260,22 +283,22 @@
 
 <div id="contactInfo">
     <div id="verticalLine"></div>
-    <a class="contactButton" id="contactGithub" href="https://github.com/Alex-Hyde" target="_blank">
+    <a class="contactButton" id="contactGithub2" href="https://github.com/Alex-Hyde" target="_blank">
         <img src="Icons/ContactIcons/github.png" class="contactImage" style="width: 100%;height: 100%;">
         <img src="Icons/ContactIcons/githubHover.png" class="contactImageHover" style="width: 100%;height: 100%;">
     </a>
-    <a class="contactButton" id="contactLinkedin" href="https://www.linkedin.com/in/alx-hyde/" target="_blank">
+    <a class="contactButton" id="contactLinkedin2" href="https://www.linkedin.com/in/alx-hyde/" target="_blank">
         <img src="Icons/ContactIcons/linkedin.png" class="contactImage" style="width: 100%;height: 100%;">
         <img src="Icons/ContactIcons/linkedinHover.png" class="contactImageHover" style="width: 100%;height: 100%;">
     </a>
-    <a class="contactButton" id="contactEmail" href="mailto:alx.hyde@outlook.com">
+    <a class="contactButton" id="contactEmail2" href="mailto:alx.hyde@outlook.com">
         <img src="Icons/ContactIcons/email.png" class="contactImage" style="width: 100%;height: 100%;">
         <img src="Icons/ContactIcons/emailHover.png" class="contactImageHover" style="width: 100%;height: 100%;">
     </a>
 </div>
 
 <footer>
-    <p style="color: white;font-size: 12px;padding: 20px;">Designed and Built by Alex Hyde</p>
+    <p style="color: #da97ff;font-size: 12px;padding: 20px;">Designed and Built by Alex Hyde</p>
 </footer>
 
 <script src="main.js"></script>
