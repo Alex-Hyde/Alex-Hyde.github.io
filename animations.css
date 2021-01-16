@@ -23,6 +23,16 @@
     animation-fill-mode: forwards;
 }
 
+@keyframes slideInRight {
+    from {transform: translateX(50px); opacity: 0;}
+    to {transform: translateX(0px); opacity: 1;}
+}
+
+.slidedInRight {
+    animation: slideInRight 1s;
+    animation-fill-mode: forwards;
+}
+
 
 .fadedIn {
     animation: fadeIn 2s;

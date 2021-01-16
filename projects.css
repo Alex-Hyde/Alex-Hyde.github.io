@@ -149,6 +149,7 @@
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
+    opacity: 0;
 }
 @media (max-width: 900px) {
     .mainProject {

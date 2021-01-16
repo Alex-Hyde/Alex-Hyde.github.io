@@ -18,6 +18,8 @@
     width: 34%;
     float: right;
     background: transparent;
+    opacity: 0;
+    animation-delay: 0.3s;
 }
 
 .aboutmepicture {

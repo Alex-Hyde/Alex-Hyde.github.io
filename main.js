@@ -210,6 +210,14 @@ window.onscroll = function() {
             elementList[i].classList.add("slidedInBottom");
         }
     }
+
+    var elementList = document.getElementsByClassName("mainProject");
+    for (i = 0; i < 3; i++) {
+        var rect = elementList[i].getBoundingClientRect();
+        if (rect.bottom > 0 && rect.top < window.innerHeight) {
+            elementList[i].classList.add("slidedInRight");
+        }
+    }
 }
 
 window.addEventListener("resize", onResize);
@@ -232,6 +240,15 @@ function onResize() {
             elementList[i].classList.add("slidedInBottom");
         }
     }
+
+    var elementList = document.getElementsByClassName("mainProject");
+    for (i = 0; i < 3; i++) {
+        var rect = elementList[i].getBoundingClientRect();
+        if (rect.bottom > 0 && rect.top < window.innerHeight) {
+            elementList[i].classList.add("slidedInRight");
+        }
+    }
+
     var images = document.getElementsByClassName("coolgameImage");
     for (i = 0; i < 3; i++) {
         images[i].style.opacity = "0";
@@ -269,6 +286,14 @@ function onLoad() {
         var rect = elementList[i].getBoundingClientRect();
         if (rect.bottom > 0 && rect.top < window.innerHeight) {
             elementList[i].classList.add("slidedInBottom");
+        }
+    }
+
+    var elementList = document.getElementsByClassName("mainProject");
+    for (i = 0; i < 3; i++) {
+        var rect = elementList[i].getBoundingClientRect();
+        if (rect.bottom > 0 && rect.top < window.innerHeight) {
+            elementList[i].classList.add("slidedInRight");
         }
     }
 }
